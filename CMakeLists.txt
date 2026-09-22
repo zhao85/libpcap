@@ -1008,7 +1008,7 @@ else(WIN32)
 	    # libxnet has recvmsg(); link with it as well.
             #
             set(PCAP_LINK_LIBRARIES xnet ${PCAP_LINK_LIBRARIES})
-            set(LIBSC "-lxnet ${LIBS_LIBS}")
+            set(LIBS "-lxnet ${LIBS}")
             set(LIBS_STATIC "-lxnet ${LIBS_STATIC}")
             set(LIBS_PRIVATE "-lxnet ${LIBS_PRIVATE}")
         endif(LIBXNET_HAS_RECVMSG)
